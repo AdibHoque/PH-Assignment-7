@@ -4,7 +4,7 @@ import searchIcon from "/Search-icon.svg";
 export default function Navbar() {
   return (
     <>
-      <div className="container mx-auto lg:px-24">
+      <div className="container px-4 mx-auto my-2 lg:px-24">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
