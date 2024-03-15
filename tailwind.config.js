@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      'customPrimary': '#0BE58A'
+    }
   },
   plugins: [DaisyUI],
 }
