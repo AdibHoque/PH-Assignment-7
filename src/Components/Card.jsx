@@ -18,10 +18,7 @@ export default function Card({recipeData, handleAddWantCook}) {
 
   return (
     <>
-      <div
-        onClick={() => handleAddWantCook(recipeData)}
-        className="card w-full bg-white rounded-2xl border border-[#12132D26] p-4 animate-fade-down animate-once"
-      >
+      <div className="card w-full bg-white rounded-2xl border border-[#12132D26] p-4 animate-fade-down animate-once">
         <figure className="">
           <img src={recipe_image} alt="Shoes" className="rounded-xl" />
         </figure>
@@ -52,7 +49,10 @@ export default function Card({recipeData, handleAddWantCook}) {
           </h4>
         </div>
         <div className="card-actions">
-          <button className="border-customPrimary btn bg-customPrimary rounded-3xl px-6 text-[#150B2B] font-semibold ">
+          <button
+            onClick={() => handleAddWantCook(recipeData)}
+            className="border-customPrimary btn bg-customPrimary rounded-3xl px-6 text-[#150B2B] font-semibold "
+          >
             Want to Cook
           </button>
         </div>
