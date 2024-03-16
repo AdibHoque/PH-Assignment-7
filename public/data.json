@@ -1,7 +1,7 @@
 [
   {
     "recipe_id": 1,
-    "recipe_name": "Spaghetti Carbonara",
+    "recipe_name": "Spag hetti",
     "recipe_image": "https://i.ibb.co/YDkJkbS/pasta-carbonara-recipe-5210168-hero-01-80090e56abc04ca19d88ebf7fad1d157.jpg",
     "short_description": "Classic Italian pasta dish with creamy sauce and crispy bacon.",
     "ingredients": [
@@ -29,7 +29,7 @@
   },
   {
     "recipe_id": 3,
-    "recipe_name": "Vegetable Stir Fry",
+    "recipe_name": "Veg Stir Fry",
     "recipe_image": "https://i.ibb.co/qBmPtqF/sc-stirfry-three-By-Two-Medium-At2-X.jpg",
     "short_description": "Healthy and colorful stir-fried vegetables with a savory sauce.",
     "ingredients": [
@@ -57,7 +57,7 @@
   },
   {
     "recipe_id": 5,
-    "recipe_name": "Mushroom Risotto",
+    "recipe_name": "Mush Risotto",
     "recipe_image": "https://i.ibb.co/qJKkdJ6/SES-mushroom-risotto-recipe-996005-hero-01-85f8cef9cf8042e8afbaa9d2e46c1fa8.jpg",
     "short_description": "Creamy and flavorful rice dish cooked with mushrooms and Parmesan cheese.",
     "ingredients": [

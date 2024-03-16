@@ -8,7 +8,6 @@ Card.propTypes = {
 
 export default function Card({recipeData, handleAddWantCook}) {
   const {
-    recipe_id,
     recipe_name,
     recipe_image,
     short_description,
@@ -20,7 +19,7 @@ export default function Card({recipeData, handleAddWantCook}) {
   return (
     <>
       <div
-        onClick={handleAddWantCook}
+        onClick={() => handleAddWantCook(recipeData)}
         className="card w-full bg-white rounded-2xl border border-[#12132D26] p-4"
       >
         <figure className="">

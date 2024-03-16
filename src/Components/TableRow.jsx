@@ -1,13 +1,14 @@
-export default function TableRow() {
+export default function TableRow({data, num}) {
+  const {recipe_name, preparing_time, calories} = data;
   return (
     <>
-      <tr className="bg-base-200">
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+      <tr className="container border-b bg-base-200 border-customPrimary">
+        <th>{num}</th>
+        <td>{recipe_name}</td>
+        <td>{preparing_time}</td>
+        <td>{calories}</td>
         <td>
-          <button className="border-customPrimary btn bg-customPrimary rounded-3xl px-6 text-[#150B2B] font-semibold ">
+          <button className="border-customPrimary btn btn-xs bg-customPrimary rounded-3xl text-[#150B2B] font-semibold ">
             Preparing
           </button>
         </td>
