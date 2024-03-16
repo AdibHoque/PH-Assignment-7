@@ -20,7 +20,7 @@ export default function Card({recipeData, handleAddWantCook}) {
     <>
       <div
         onClick={() => handleAddWantCook(recipeData)}
-        className="card w-full bg-white rounded-2xl border border-[#12132D26] p-4"
+        className="card w-full bg-white rounded-2xl border border-[#12132D26] p-4 animate-fade-down animate-once"
       >
         <figure className="">
           <img src={recipe_image} alt="Shoes" className="rounded-xl" />

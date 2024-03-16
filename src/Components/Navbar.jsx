@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <div className="container px-4 mx-auto my-2 lg:px-24">
         <div className="navbar bg-base-100">
-          <div className="navbar-start">
+          <div className="navbar-start animate-fade-right">
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
             <a className="font-bold md:text-2xl">Recipe Calories</a>
           </div>
-          <div className="hidden navbar-center lg:flex">
+          <div className="hidden navbar-center lg:flex animate-fade-down">
             <ul className="px-1 menu menu-horizontal">
               <li>
                 <a>Home</a>
@@ -64,7 +64,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="gap-2 navbar-end">
+          <div className="gap-2 navbar-end animate-fade-left">
             <div className="max-md:btn max-md:btn-circle max-sm:bg-customPrimary flex justify-between items-center p-2 bg-white rounded-3xl bg-[#150B2B0D]">
               <img src={searchIcon} alt="User Icon" />
               <input

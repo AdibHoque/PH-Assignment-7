@@ -12,6 +12,6 @@ export default {
       'customPrimary': '#0BE58A'
     }
   },
-  plugins: [DaisyUI],
+  plugins: [DaisyUI, require('tailwindcss-animated')],
 }
 

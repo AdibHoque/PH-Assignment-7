@@ -3,7 +3,7 @@ export default function Hero() {
     <>
       <div className="container px-4 mx-auto lg:px-24">
         <div
-          className="h-[80vh] hero rounded-2xl"
+          className="h-[80vh] hero rounded-2xl animate-fade-down animate-delay-150 animate-once"
           style={{
             backgroundImage: "url(https://i.ibb.co/dgqXvjK/banner-image.jpg)",
           }}
@@ -20,10 +20,10 @@ export default function Hero() {
                 about sharing their knowledge and expertise.
               </p>
               <div className="flex items-center justify-center gap-2 ">
-                <button className="border-customPrimary btn bg-customPrimary rounded-3xl px-6 text-[#150B2B] font-semibold ">
+                <button className="border-customPrimary animate-jump animate-delay-500 animate-once btn bg-customPrimary rounded-3xl px-6 text-[#150B2B] font-semibold ">
                   Explore Now
                 </button>
-                <button className="btn bg-transparent border border-[#fff] rounded-3xl px-6 text-[#fff] font-semibold ">
+                <button className="btn animate-jump animate-delay-500 animate-once bg-transparent border border-[#fff] rounded-3xl px-6 text-[#fff] font-semibold ">
                   Our Feedback
                 </button>
               </div>
