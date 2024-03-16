@@ -34,13 +34,25 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <ToastContainer />
-      <div className="container flex flex-col gap-4 px-6 mx-auto my-6 lg:flex-row lg:px-24">
-        <Recipes handleAddWantCook={handleAddWantCook}></Recipes>
-        <Sidebar
-          wantCook={wantCook}
-          currentCook={currentCook}
-          handleAddCurrentCook={handleAddCurrentCook}
-        ></Sidebar>
+      <div className="container px-6 mx-auto mt-10 lg:px-24">
+        <div className="px-4 my-6 text-center md:px-20 lg:px-28">
+          <h1 className="font-semibold text-4xl text-[#150B2B] ">
+            Our Recipes
+          </h1>
+          <p className="text-[#150B2B99]">
+            Discover an array of tantalizing recipes curated just for you. From
+            savory mains to delectable desserts, explore our culinary treasures.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4 lg:flex-row">
+          <Recipes handleAddWantCook={handleAddWantCook}></Recipes>
+          <Sidebar
+            wantCook={wantCook}
+            currentCook={currentCook}
+            handleAddCurrentCook={handleAddCurrentCook}
+          ></Sidebar>
+        </div>
       </div>
     </>
   );
