@@ -1,12 +1,12 @@
 import clockIcon from "/Clock-icon.svg";
 import calorieIcon from "/Calorie-icon.svg";
-import PropTypes from "prop-types";
+import PropTypes, {func} from "prop-types";
 
 Card.propTypes = {
   recipeData: PropTypes.object,
 };
 
-export default function Card({recipeData}) {
+export default function Card({recipeData, handleAddWantCook}) {
   const {
     recipe_id,
     recipe_name,
@@ -19,7 +19,10 @@ export default function Card({recipeData}) {
 
   return (
     <>
-      <div className="card bg-white rounded-2xl border border-[#12132D26] p-4 m-4">
+      <div
+        onClick={handleAddWantCook}
+        className="card w-full bg-white rounded-2xl border border-[#12132D26] p-4"
+      >
         <figure className="">
           <img src={recipe_image} alt="Shoes" className="rounded-xl" />
         </figure>
@@ -36,7 +39,7 @@ export default function Card({recipeData}) {
           </h3>
           <ol className="text-[#878787] list-disc px-4 my-4">
             {ingredients.map((ing) => (
-              <li key={recipe_id}>{ing}</li>
+              <li key={Math.random() * 6969}>{ing}</li>
             ))}
           </ol>
         </div>
