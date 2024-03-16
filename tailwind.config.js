@@ -1,4 +1,5 @@
 import DaisyUI from 'daisyui'
+import TailwindAnimations from 'tailwindcss-animated'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,6 +13,6 @@ export default {
       'customPrimary': '#0BE58A'
     }
   },
-  plugins: [DaisyUI, require('tailwindcss-animated')],
+  plugins: [DaisyUI, TailwindAnimations],
 }
 

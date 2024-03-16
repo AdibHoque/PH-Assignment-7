@@ -1,5 +1,12 @@
 import CookingTableRow from "./CookingTableRow";
 import TableRow from "./TableRow";
+import PropTypes from "prop-types";
+
+Sidebar.propTypes = {
+  wantCook: PropTypes.array,
+  currentCook: PropTypes.array,
+  handleAddCurrentCook: PropTypes.func,
+};
 
 export default function Sidebar({wantCook, currentCook, handleAddCurrentCook}) {
   return (

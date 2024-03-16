@@ -1,5 +1,9 @@
 import {useEffect, useState} from "react";
 import Card from "./Card";
+import PropTypes from "prop-types";
+Recipes.propTypes = {
+  handleAddWantCook: PropTypes.func,
+};
 
 export default function Recipes({handleAddWantCook}) {
   const [data, setData] = useState([]);

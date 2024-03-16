@@ -1,4 +1,10 @@
-export default function CookingTableRow({data, num, handleAddCurrentCook}) {
+import PropTypes from "prop-types";
+CookingTableRow.propTypes = {
+  data: PropTypes.object,
+  num: PropTypes.number,
+};
+
+export default function CookingTableRow({data, num}) {
   const {recipe_name, preparing_time, calories} = data;
   return (
     <>

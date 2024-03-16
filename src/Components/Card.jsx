@@ -1,9 +1,10 @@
 import clockIcon from "/Clock-icon.svg";
 import calorieIcon from "/Calorie-icon.svg";
-import PropTypes, {func} from "prop-types";
+import PropTypes from "prop-types";
 
 Card.propTypes = {
   recipeData: PropTypes.object,
+  handleAddWantCook: PropTypes.func,
 };
 
 export default function Card({recipeData, handleAddWantCook}) {
